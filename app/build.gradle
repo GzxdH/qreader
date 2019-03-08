@@ -1,6 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
+group='com.github.GzxdH'
 android {
     compileSdkVersion 28
     useLibrary 'org.apache.http.legacy'
