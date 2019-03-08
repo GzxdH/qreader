@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.geometerplus.android.fbreader.popup.MainMenuWindow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmenuwindow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/window_background">
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:padding="10dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/yuedu_fanhui" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bookshelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/bookshelf" />
+
+        <ImageButton
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/bookshelf"
+            android:background="@drawable/shuqian" />
+    </RelativeLayout>
+
+
+</org.geometerplus.android.fbreader.popup.MainMenuWindow>

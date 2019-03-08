@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.geometerplus.android.fbreader.NavigationWindow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/white"
+    android:focusable="false"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:visibility="visible"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/navigation_toc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/mulu"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp"
+            android:text="目录"
+            android:textColor="#dfaaaaaa"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/navigation_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/progress"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp"
+            android:text="进度"
+            android:textColor="#dfaaaaaa"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/navigation_fonts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/shezhi"
+            android:paddingBottom="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="15dp"
+            android:text="设置"
+            android:textColor="#dfaaaaaa"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</org.geometerplus.android.fbreader.NavigationWindow>
