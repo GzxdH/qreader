@@ -337,7 +337,7 @@ public class DragSortListView extends ListView {
     private boolean mLastCallWasIntercept = false;
 
     /**
-     * A touch event is in progress.
+     * A touch event is in progress_up.
      */
     private boolean mInTouchEvent = false;
 
@@ -1518,7 +1518,7 @@ public class DragSortListView extends ListView {
     }
 
     /**
-     * Stop a drag in progress. Pass <code>true</code> if you would
+     * Stop a drag in progress_up. Pass <code>true</code> if you would
      * like to remove the dragged item from the list.
      *
      * @param remove Remove the dragged item from the list. Calls
@@ -2188,7 +2188,7 @@ public class DragSortListView extends ListView {
      * @return True if the drag was started, false otherwise. This
      * <code>startDrag</code> will fail if we are not currently in
      * a touch event, <code>floatView</code> is null, or there is
-     * a drag in progress.
+     * a drag in progress_up.
      */
     public boolean startDrag(int position, View floatView, int dragFlags, int deltaX, int deltaY) {
         if (mDragState != IDLE || !mInTouchEvent || mFloatView != null || floatView == null || !mDragEnabled) {

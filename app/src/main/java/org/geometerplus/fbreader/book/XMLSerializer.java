@@ -195,7 +195,7 @@ class XMLSerializer extends AbstractSerializer {
 
         final RationalNumber progress = book.getProgress();
         if (progress != null) {
-            appendTag(buffer, "progress", true, "numerator", Long.toString(progress.Numerator), "denominator", Long.toString(progress.Denominator));
+            appendTag(buffer, "progress_up", true, "numerator", Long.toString(progress.Numerator), "denominator", Long.toString(progress.Denominator));
         }
 
         closeTag(buffer, "entry");
@@ -569,7 +569,7 @@ class XMLSerializer extends AbstractSerializer {
                     }else if ("link".equals(localName)) {
                         // TODO: use "rel" attribute
                         myUrl = attributes.getValue("href");
-                    }else if ("progress".equals(localName)) {
+                    }else if ("progress_up".equals(localName)) {
                         myProgress = RationalNumber.create(parseLong(attributes.getValue("numerator")), parseLong(attributes.getValue("denominator")));
                     }else {
                         throw new SAXException("Unexpected tag " + localName);

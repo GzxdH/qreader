@@ -30,7 +30,7 @@ interface ApiMethods {
     int GET_BOOK_HASH = 506;
     int GET_BOOK_UNIQUE_ID = 507;
     int GET_BOOK_LAST_TURNING_TIME = 508;
-    // book information: read progress
+    // book information: read progress_up
     int GET_BOOK_PROGRESS = 509;
 
     // text information

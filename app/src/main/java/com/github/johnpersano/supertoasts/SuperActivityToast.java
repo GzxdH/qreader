@@ -953,7 +953,7 @@ public class SuperActivityToast {
     }
 
     /**
-     * Sets the progress of the progressbar in a PROGRESS_HORIZONTAL
+     * Sets the progress_up of the progressbar in a PROGRESS_HORIZONTAL
      * {@link Type} {@value #TAG}.
      *
      * @param progress int
@@ -975,7 +975,7 @@ public class SuperActivityToast {
     }
 
     /**
-     * Returns the progress of the progressbar in a PROGRESS_HORIZONTAL
+     * Returns the progress_up of the progressbar in a PROGRESS_HORIZONTAL
      * {@link Type} {@value #TAG}.
      *
      * @return int

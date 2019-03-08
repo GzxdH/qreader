@@ -1,6 +1,5 @@
 package org.geometerplus.android.fbreader.popup;
 
-import android.app.Application;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
@@ -99,7 +98,7 @@ public class ProgressPopup extends ZLApplication.PopupPanel {
         if (myWindow != null && myActivity == myWindow.getContext()) {
             return;
         }
-        myActivity.getLayoutInflater().inflate(R.layout.progress,myRoot);
+        myActivity.getLayoutInflater().inflate(R.layout.progress_up,myRoot);
         myWindow = (ProgressWindow) myRoot.findViewById(R.id.progressWindow);
 //        mText = (TextView) myWindow.findViewById(R.id.navigation_text);//章节信息显示
         mSlider = (SeekBar) myWindow.findViewById(R.id.navigation_slider);//进度条
@@ -130,7 +129,7 @@ public class ProgressPopup extends ZLApplication.PopupPanel {
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
             if (fromUser){
-//                gotoPagePer(progress);
+//                gotoPagePer(progress_up);
                 final TOCTree tocElement = myKooReader.getProgressTOCElement(progress);
                 if (tocElement != null) {
                     gotoPageByPrah(tocElement.getReference().ParagraphIndex + 1);
@@ -192,7 +191,7 @@ public class ProgressPopup extends ZLApplication.PopupPanel {
         String progress = textView.pagePositionPec();//获取当前进度
         mSlider.setMax(textView.pagePosition2());//设置最大长度
         mSlider.setProgress(textView.pagePosition1());//设置当前长度
-//        mText.setText(makeProgressTextPer(progress));
+//        mText.setText(makeProgressTextPer(progress_up));
     }
     private String makeProgressTextPer(String progress) {
         final StringBuilder builder = new StringBuilder();

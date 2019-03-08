@@ -164,12 +164,12 @@ public class SuperToast {
         STANDARD,
 
         /**
-         * Progress type used for showing progress.
+         * Progress type used for showing progress_up.
          */
         PROGRESS,
 
         /**
-         * Progress type used for showing progress.
+         * Progress type used for showing progress_up.
          */
         PROGRESS_HORIZONTAL,
 
