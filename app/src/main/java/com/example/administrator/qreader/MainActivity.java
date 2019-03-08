@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             bs = new BookCollectionShadow();
             bs.bindToService(this, new downloadbook());
         }
-        Log.i("info:::", path);
+        Log.i("info::::", path);
 
 
     }
