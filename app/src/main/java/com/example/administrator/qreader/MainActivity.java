@@ -13,6 +13,7 @@ import android.widget.Toast;
 import org.geometerplus.android.fbreader.FBReader;
 import org.geometerplus.android.fbreader.NavigationPopup;
 import org.geometerplus.android.fbreader.NavigationWindow;
+import org.geometerplus.android.fbreader.api.FBReaderIntents;
 import org.geometerplus.android.fbreader.libraryService.BookCollectionShadow;
 import org.geometerplus.fbreader.book.Book;
 import org.geometerplus.fbreader.book.IBookCollection;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // /storage/emulated/0/11111.mobi
         //Environment.getExternalStorageDirectory().getAbsolutePath() + "/33333.epub";
+        FBReaderIntents.setPackageName("com.example.administrator.qreader");
         path = "/storage/emulated/0/11111.mobi";
         if (bs == null) {
             bs = new BookCollectionShadow();

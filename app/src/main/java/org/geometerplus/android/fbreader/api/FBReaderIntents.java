@@ -24,7 +24,7 @@ import org.geometerplus.fbreader.book.*;
 
 public abstract class FBReaderIntents {
 //org.geometerplus.zlibrary.ui.android
-    private static String DEFAULT_PACKAGE;
+    public static String DEFAULT_PACKAGE = "";
 
     public static void setPackageName(String name){
         DEFAULT_PACKAGE = name;
