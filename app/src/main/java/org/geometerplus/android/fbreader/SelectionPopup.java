@@ -94,23 +94,35 @@ class SelectionPopup extends PopupPanel implements View.OnClickListener {
     }
 
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.selection_panel_copy:
-                Application.runAction(ActionCode.SELECTION_COPY_TO_CLIPBOARD);
-                break;
-            case R.id.selection_panel_share:
-                Application.runAction(ActionCode.SELECTION_SHARE);
-                break;
-            case R.id.selection_panel_translate:
-                Application.runAction(ActionCode.SELECTION_TRANSLATE);
-                break;
-            case R.id.selection_panel_bookmark:
-                Application.runAction(ActionCode.SELECTION_BOOKMARK);
-                break;
-            case R.id.selection_panel_close:
-                Application.runAction(ActionCode.SELECTION_CLEAR);
-                break;
+
+        if(view.getId() == R.id.selection_panel_copy){
+            Application.runAction(ActionCode.SELECTION_COPY_TO_CLIPBOARD);
+        }else if(view.getId() == R.id.selection_panel_share){
+            Application.runAction(ActionCode.SELECTION_SHARE);
+        }else if(view.getId() == R.id.selection_panel_translate){
+            Application.runAction(ActionCode.SELECTION_TRANSLATE);
+        }else if(view.getId() == R.id.selection_panel_bookmark){
+            Application.runAction(ActionCode.SELECTION_BOOKMARK);
+        }else if(view.getId() == R.id.selection_panel_close){
+            Application.runAction(ActionCode.SELECTION_CLEAR);
         }
+//        switch (view.getId()) {
+//            case R.id.selection_panel_copy:
+//                Application.runAction(ActionCode.SELECTION_COPY_TO_CLIPBOARD);
+//                break;
+//            case R.id.selection_panel_share:
+//                Application.runAction(ActionCode.SELECTION_SHARE);
+//                break;
+//            case R.id.selection_panel_translate:
+//                Application.runAction(ActionCode.SELECTION_TRANSLATE);
+//                break;
+//            case R.id.selection_panel_bookmark:
+//                Application.runAction(ActionCode.SELECTION_BOOKMARK);
+//                break;
+//            case R.id.selection_panel_close:
+//                Application.runAction(ActionCode.SELECTION_CLEAR);
+//                break;
+//        }
         Application.hideActivePopup();
     }
 }
