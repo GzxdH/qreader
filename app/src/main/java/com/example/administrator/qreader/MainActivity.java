@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // /storage/emulated/0/11111.mobi
         //Environment.getExternalStorageDirectory().getAbsolutePath() + "/33333.epub";
-        FBReaderIntents.setPackageName("com.example.administrator.qreader");
         path = "/storage/emulated/0/11111.mobi";
         if (bs == null) {
             bs = new BookCollectionShadow();
