@@ -20,11 +20,13 @@
 package org.geometerplus.android.fbreader.api;
 
 import android.content.Intent;
+
 import org.geometerplus.fbreader.book.*;
 
 public abstract class FBReaderIntents {
-//org.geometerplus.zlibrary.ui.android
-    public static String DEFAULT_PACKAGE = "com.example.administrator.qreader";
+    //org.geometerplus.zlibrary.ui.android
+    //com.example.administrator.qreader
+    public static String DEFAULT_PACKAGE = "com.zxdynamite.zxd.mreader322";
 
     public interface Action {
 
