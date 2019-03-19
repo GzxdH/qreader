@@ -26,7 +26,8 @@ import org.geometerplus.fbreader.book.*;
 public abstract class FBReaderIntents {
     //org.geometerplus.zlibrary.ui.android
     //com.example.administrator.qreader
-    public static String DEFAULT_PACKAGE = "com.zxdynamite.zxd.mreader322";
+    //com.zxdynamite.zxd.mreader322
+    public static String DEFAULT_PACKAGE = "com.miruan.enjoylife";
 
     public interface Action {
 
