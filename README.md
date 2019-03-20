@@ -9,3 +9,9 @@ apply plugin: 'com.android.library' --> apply plugin: 'com.android.application'�
 取消AndroidManifest.xml里MAIN的注释。
 
 5.0以上在FBReaderIntents修改成自己的包名。
+
+参考：
+
+https://github.com/Jiangzqts/EpubRead
+
+https://github.com/adolfAn/FBReader_AS
