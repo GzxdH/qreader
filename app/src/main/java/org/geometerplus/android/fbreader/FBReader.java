@@ -419,6 +419,7 @@ public final class FBReader extends FBReaderMainActivity implements ZLApplicatio
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
+        finish();
         return (myMainView != null && myMainView.onKeyDown(keyCode, event)) || super.onKeyDown(keyCode, event);
 //        return (myCurlView != null && myCurlView.onKeyDown(keyCode, event)) || super.onKeyDown(keyCode, event);
     }
