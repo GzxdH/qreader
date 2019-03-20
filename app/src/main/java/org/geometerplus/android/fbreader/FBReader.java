@@ -86,7 +86,7 @@ import java.util.*;
 public final class FBReader extends FBReaderMainActivity implements ZLApplicationWindow {
 
     public static final int RESULT_DO_NOTHING = RESULT_FIRST_USER;
-
+    public static int isCloose = 1;
     public static void openBookActivity(Context context, Book book, Bookmark bookmark) {
         final Intent intent = new Intent(context, FBReader.class);
         intent.setAction(FBReaderIntents.Action.VIEW);
@@ -512,6 +512,7 @@ public final class FBReader extends FBReaderMainActivity implements ZLApplicatio
 
     @Override
     public void close() {
+        isCloose = 0;
         finish();
     }
 
